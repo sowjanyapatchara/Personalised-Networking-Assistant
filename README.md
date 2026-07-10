@@ -174,10 +174,50 @@ storage → history/feedback) while being something you can actually run and dem
 
 Watch the complete project demonstration here:
 
-**Google Drive:**  
-https://drive.google.com/file/d/14L1BGqLOZ3P0-5h9RcTzTCjckrctV8TZ/view?usp=drivesdk
+▶️ **[Click here to watch the demo video](https://drive.google.com/file/d/14L1BGqLOZ3P0-5h9RcTzTCjckrctV8TZ/view?usp=drivesdk)**
 
-## 8. For your submission / demo
+## 8. Screenshots
+
+### Home Page
+![Home](outputs/home.png)
+
+### Generate Conversation Starters
+![Generate](outputs/generate.png)
+
+### Fact Verification
+![Verify](outputs/verify.png)
+
+### Interaction History
+![History](outputs/history.png)
+
+## 9. Features
+
+- AI-powered conversation starter generation
+- Personalized networking recommendations
+- Wikipedia-based fact verification
+- Interaction history tracking
+- User feedback logging
+- FastAPI REST APIs
+- Responsive multi-page frontend
+
+## 10. Technologies Used
+
+### Frontend
+- HTML5
+- CSS3
+- JavaScript
+
+### Backend
+- Python
+- FastAPI
+- SQLAlchemy
+- SQLite
+
+### AI & APIs
+- Google Gemini API
+- Wikipedia REST API
+
+## 11. For your submission / demo
 
 - **GitHub:** push this whole `networking-assistant/` folder as your repo root.
 - **Demo:** run Step 5 and record/demo `http://127.0.0.1:8000/` locally, walking through
@@ -192,5 +232,11 @@ __pycache__/
 *.db
 .env
 ```
-# Author
-Patchara Devi Venkata Sowjanya
+##  Author
+
+**Patchara Devi Venkata Sowjanya**
+
+##  License
+
+This project is developed for academic and educational purposes.
+
