@@ -170,7 +170,14 @@ storage → history/feedback) while being something you can actually run and dem
 
 ---
 
-## 7. For your submission / demo
+## 7. Demo Video
+
+Watch the complete project demonstration here:
+
+**Google Drive:**  
+https://drive.google.com/file/d/14L1BGqLOZ3P0-5h9RcTzTCjckrctV8TZ/view?usp=drivesdk
+
+## 8. For your submission / demo
 
 - **GitHub:** push this whole `networking-assistant/` folder as your repo root.
 - **Demo:** run Step 5 and record/demo `http://127.0.0.1:8000/` locally, walking through
@@ -185,3 +192,5 @@ __pycache__/
 *.db
 .env
 ```
+# Author
+Patchara Devi Venkata Sowjanya
