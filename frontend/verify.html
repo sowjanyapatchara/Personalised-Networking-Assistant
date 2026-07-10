@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fact Check — Networking Assistant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="/" class="brand"><span class="brand-mark"></span> Networking Assistant</a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/generate.html">Generate</a></li>
+      <li><a href="/verify.html" class="active">Fact Check</a></li>
+      <li><a href="/history.html">History</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <div class="shell" style="max-width:720px;">
+    <div class="eyebrow">Wikipedia-backed</div>
+    <h1 style="font-size:1.9rem;">Quick fact check</h1>
+    <p style="max-width:56ch; margin-bottom:32px;">
+      About to bring up "blockchain in healthcare" or some other topic? Check it here first.
+    </p>
+
+    <div id="status-area"></div>
+
+    <form id="verify-form" class="panel" style="display:flex; gap:12px; align-items:flex-end;">
+      <div class="field" style="flex:1; margin-bottom:0;">
+        <label for="query">Topic to verify</label>
+        <input type="text" id="query" required placeholder="e.g. blockchain in healthcare" />
+      </div>
+      <button type="submit" id="verify-btn" class="btn btn-primary" style="height:44px;">Check →</button>
+    </form>
+
+    <div id="result" style="margin-top:24px; display:none;" class="panel">
+      <h3 id="result-title" style="font-size:1.1rem;"></h3>
+      <p id="result-summary" style="color:var(--text);"></p>
+      <a id="result-link" href="#" target="_blank" rel="noopener" class="btn btn-ghost" style="margin-top:6px;">Read full article ↗</a>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell">Personalized Networking Assistant — built with FastAPI, SQLite &amp; Google Gemini</div>
+</footer>
+
+<script src="/static/js/api.js"></script>
+<script src="/static/js/verify.js"></script>
+</body>
+</html>

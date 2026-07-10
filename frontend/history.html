@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>History — Networking Assistant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="/" class="brand"><span class="brand-mark"></span> Networking Assistant</a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/generate.html">Generate</a></li>
+      <li><a href="/verify.html">Fact Check</a></li>
+      <li><a href="/history.html" class="active">History</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <div class="shell" style="max-width:780px;">
+    <div class="eyebrow">Your past sessions</div>
+    <h1 style="font-size:1.9rem;">History</h1>
+    <p style="max-width:56ch; margin-bottom:32px;">Review previously generated starters and what you rated useful.</p>
+
+    <div id="status-area"></div>
+    <div id="history-list"></div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell">Personalized Networking Assistant — built with FastAPI, SQLite &amp; Google Gemini</div>
+</footer>
+
+<script src="/static/js/api.js"></script>
+<script src="/static/js/history.js"></script>
+</body>
+</html>
